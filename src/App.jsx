@@ -55,19 +55,21 @@ function App() {
   return(
     <div className="bg-[#0A0908] relative  min-h-screen">
     <div className="flex justify-between pl-5 pt-3 text-white w-full">
-    <div>
-      <h1 className="text-4xl font-extrabold">
+    <div className="md:w-[50%] w-[45%]">
+      <h1 className="md:text-4xl text-xl font-extrabold">
         POKEMON MEMORY GAME
       </h1>
-      <br/>
-      <span>
-      Get points by clicking on an image but don't click on any more than once!
-      </span>
+      
     </div>
     <div className="text-right">
-    <h1 className="text-right text-white pr-4 text-lg inline font-medium">SCORE: {score}</h1><br/>
-    <h1 className="text-right text-white text-lg pr-4 inline font-semibold">MAX SCORE: {max}</h1>
+    <h1 className=" text-white pr-4 md:text-lg text-sm inline font-medium">SCORE: {score}</h1><br/>
+    <h1 className=" text-white md:text-lg text-sm pr-4 inline font-semibold">MAX SCORE: {max}</h1>
     </div>
+    </div>
+    <div className="w-full text-center mt-5 pl-2 pr-2">
+      <span className="text-white">
+      Get points by clicking on an image but don't click on any more than once!
+      </span>
     </div>
     <div className="flex gap-5  flex-wrap w-[70%] opacity-100 transition-opacity duration-1000 mt-5  pt-5 mx-auto justify-center">
   {dis && links.map((link) => (
